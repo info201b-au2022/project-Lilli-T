@@ -29,10 +29,15 @@ As climate change continues to affect our ecosystems, [the rate and intensity of
 
 ## Problem Domain
 Background:Wildfires emit carbon dioxide and other greenhouse gasses that will continue to warm the planet well into the future. [They damage forests that would otherwise remove CO2 from the air. And they inject soot and other aerosols into the atmosphere, with complex effects on warming and cooling](https://insideclimatenews.org/news/23082018/extreme-wildfires-climate-change-global-warming-air-pollution-fire-management-black-carbon-co2/).The air pollution can cause a range of health issues such as respiratory problems. Even in healthy people, [exposures to fine particles can potentially lead to transient reductions in lung function, and pulmonary inflammation.](URL)
+
 Relevance: Wildfires and volcanic activities affected [6.2 million people between 1998-2017 with 2400 attributable deaths worldwide from suffocation, injuries, and burns](https://www.who.int/health-topics/wildfires#tab=tab_1), but the size and frequency of wildfires are increasing due to climate change.
+
 Human values: by examining people's perception and consciousness of wildfires, we care that everyone is qualified to have access to and understand relevant knowledge about health effects.
+
 Indirect Stakeholders: Policy makers are indirect stakeholders since they can get access to recent development of wildfires and people’s responses about it. If people take wildfires less seriously than expected, they can efficiently take action such as increasing awareness of the dangers by advocacy.  
+
 Direct Stakeholders: Our project team is one of the direct stakeholders as our project success depends on our decisions and contributions.
+
 Potential Benefits and Harms: The potential benefits of our project is to provide motivations and inspirations for engineers and architects to construct safer buildings in areas prone to wildfires. The potential harm is that the analysis might induce anxiety in some readers because natural disasters like wildfires are uncontrollable events which happen yearly, and corresponding building reconstructions require substantial capital investment and design dedication.
 
 
