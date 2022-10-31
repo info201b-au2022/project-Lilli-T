@@ -64,8 +64,11 @@ Raina Scherer, for providing resources to finding a credible and extensive data 
 
 ## References
 Berwyn, B. (2020, December 7). How wildfires can affect climate change (and vice versa). Inside Climate News. Retrieved October 31, 2022, from https://insideclimatenews.org/news/23082018/extreme-wildfires-climate-change-global-warming-air-pollution-fire-management-black-carbon-co2/
+
 Environmental Protection Agency. (2021, August 1). Climate Change Indicators: Wildfires. EPA. Retrieved October 31, 2022, from https://www.epa.gov/climate-indicators/climate-change-indicators-wildfires
+
 Environmental Protection Agency. (2021, November 17). EPA. Retrieved October 31, 2022, from https://www.epa.gov/wildfire-smoke-course/health-effects-attributed-wildfire-smoke
+
 Organization, W. H. (2018). Wildfires. Retrieved October 31, 2022, from https://www.who.int/health-topics/wildfires#tab=tab_1
 
 
