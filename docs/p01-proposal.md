@@ -28,17 +28,17 @@ Wildfire, community development, air quality, building safety
 As climate change continues to affect our ecosystems, [the rate and intensity of annual wildfires have increased in the Pacific Northwest.](https://www.epa.gov/climate-indicators/climate-change-indicators-wildfires) We are concerned with how community members currently protect themselves from hazardous health conditions caused by wildfires. Answering this question can not only suggest to urban planners methods to keep their residents safe, but it can also encourage these residents to be more conscious of the negative effects of wildfires. We will address this concern by examining three data sets on recent trends of wildfire intensities, how college students perceive and navigate poor air quality from smoke, and the safest locations within buildings during wildfire seasons.
 
 ## Problem Domain
-Background:Wildfires emit carbon dioxide and other greenhouse gasses that will continue to warm the planet well into the future. [They damage forests that would otherwise remove CO2 from the air. And they inject soot and other aerosols into the atmosphere, with complex effects on warming and cooling](https://insideclimatenews.org/news/23082018/extreme-wildfires-climate-change-global-warming-air-pollution-fire-management-black-carbon-co2/).The air pollution can cause a range of health issues such as respiratory problems. Even in healthy people, [exposures to fine particles can potentially lead to transient reductions in lung function, and pulmonary inflammation.](URL)
+**Background:** Wildfires emit carbon dioxide and other greenhouse gasses that will continue to warm the planet well into the future. [They damage forests that would otherwise remove CO2 from the air. And they inject soot and other aerosols into the atmosphere, with complex effects on warming and cooling](https://insideclimatenews.org/news/23082018/extreme-wildfires-climate-change-global-warming-air-pollution-fire-management-black-carbon-co2/).The air pollution can cause a range of health issues such as respiratory problems. Even in healthy people, [exposures to fine particles can potentially lead to transient reductions in lung function, and pulmonary inflammation.](URL)
 
-Relevance: Wildfires and volcanic activities affected [6.2 million people between 1998-2017 with 2400 attributable deaths worldwide from suffocation, injuries, and burns](https://www.who.int/health-topics/wildfires#tab=tab_1), but the size and frequency of wildfires are increasing due to climate change.
+**Relevance:** Wildfires and volcanic activities affected [6.2 million people between 1998-2017 with 2400 attributable deaths worldwide from suffocation, injuries, and burns](https://www.who.int/health-topics/wildfires#tab=tab_1), but the size and frequency of wildfires are increasing due to climate change.
 
-Human values: by examining people's perception and consciousness of wildfires, we care that everyone is qualified to have access to and understand relevant knowledge about health effects.
+**Human values:** by examining people's perception and consciousness of wildfires, we care that everyone is qualified to have access to and understand relevant knowledge about health effects.
 
-Indirect Stakeholders: Policy makers are indirect stakeholders since they can get access to recent development of wildfires and people’s responses about it. If people take wildfires less seriously than expected, they can efficiently take action such as increasing awareness of the dangers by advocacy.  
+**Indirect Stakeholders:** Policy makers are indirect stakeholders since they can get access to recent development of wildfires and people’s responses about it. If people take wildfires less seriously than expected, they can efficiently take action such as increasing awareness of the dangers by advocacy.  
 
-Direct Stakeholders: Our project team is one of the direct stakeholders as our project success depends on our decisions and contributions.
+**Direct Stakeholders:** Our project team is one of the direct stakeholders as our project success depends on our decisions and contributions.
 
-Potential Benefits and Harms: The potential benefits of our project is to provide motivations and inspirations for engineers and architects to construct safer buildings in areas prone to wildfires. The potential harm is that the analysis might induce anxiety in some readers because natural disasters like wildfires are uncontrollable events which happen yearly, and corresponding building reconstructions require substantial capital investment and design dedication.
+**Potential Benefits and Harms:** The potential benefits of our project is to provide motivations and inspirations for engineers and architects to construct safer buildings in areas prone to wildfires. The potential harm is that the analysis might induce anxiety in some readers because natural disasters like wildfires are uncontrollable events which happen yearly, and corresponding building reconstructions require substantial capital investment and design dedication.
 
 
 ## Research Questions
@@ -49,15 +49,20 @@ Potential Benefits and Harms: The potential benefits of our project is to provid
 4. Which rooms have the best measured air quality during an increase in wildfire smoke? This question allows for a comparison between perceived safety and scientific safety, as measured by the amount of pollutants in the air. Building planners can use this data to create spaces that both protect against pollutants and are an inviting environment.
 
 ## The Data Set
-Our data set is a collection of
+* Our first data set came from 3 researchers Jovan Pantelic, Megan Dawe , and Dusan Licina from UC Berkeley in 2019 which contains air quality data measured in pm2.5 in specific buildings and rooms in a particular state, documented throughout different times of the day. This data set came from their examination of building’s resilience to wildfires and associated emissions of particulate matter indoors. It will be primarily used to answer our third and fourth research questions about people’s indoor activities during wildfires and how the building structure actually protests the individuals. https://pdfs.semanticscholar.org/1e61/9438fde19776c34d8b533e0cb383a18cb897.pdf 
 
-Our second file contains
+* Our second data file came from the US Forest Service published in May 2022 which contains documented wildfires since 1984 in different states and their damage measured in acres. This data serves as the fundamental learning tool for us to understand wildfires recurrency and severity. It will also help us resolve our second research question while studying the correlation between participants geographic location and their perception of wildfires. https://catalog.data.gov/dataset/monitoring-trends-in-burn-severity-fire-occurrence-locations-feature-layer-67d6a 
 
-Our third file contains survey results that record behavior in response to the 2018 summer California wildfires.
+* Our third file contains survey results that record behavior in response to the 2018 summer California wildfires. It would answer the first research question by comparing the consciousness level of people who have different physical health conditions and any other factors that would affect individuals’ response.
+https://springernature.figshare.com/collections/A_Dataset_on_Human_Response_to_Wildfire_Smoke/4316795
+
 
 ## Expected Implications
-Architects; maybe implement ways to have a space that limits smoke and is accessible to people of lower general health.
-This will all be more relevant in the future, as wildfires rates are expected to increase.
+
+* Architects will reference our analysis to construct buildings and designated spaces that limit smoke and are accessible to people of lower general health.
+
+* Governors will use our analysis to understand the general public’s cautiousness of wildfires' negative impacts on their physical health and how well the civilians are protected indoors during wildfire seasons. They will set up education and protective protocols to help citizens protect themselves, and budget fundings for infrastructure amelioration. 
+
 
 ## Limitations
 
