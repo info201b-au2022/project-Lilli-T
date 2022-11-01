@@ -56,9 +56,9 @@ As climate change continues to affect our ecosystems, [the rate and intensity of
 * Our third file contains survey results that record behavior in response to the 2018 summer California wildfires. It would answer the first research question by comparing the consciousness level of people who have different physical health conditions and any other factors that would affect individuals’ response.
 https://springernature.figshare.com/collections/A_Dataset_on_Human_Response_to_Wildfire_Smoke/4316795
 
-![table](datasetTable.png)
+![table](~/Documents/info201/project-Lilli-T/docs/datasetTable.png)
 
-AghaKouchak, A., Abatzoglou, J. T., Dennison, P., Sadegh, M., Fowler, M., Adams, A., Utych, S., Alamian, S., Pierce, J., Rad, A. M., & Montrose, L. (2019, October 17). In-person survey. figshare. Retrieved October 31, 2022, from https://springernature.figshare.com/articles/dataset/In-person_survey/8323652?backTo=%2Fcollections%2FA_Dataset_on_Human_Response_to_Wildfire_Smoke%2F4316795 
+AghaKouchak, A., Abatzoglou, J. T., Dennison, P., Sadegh, M., Fowler, M., Adams, A., Utych, S., Alamian, S., Pierce, J., Rad, A. M., & Montrose, L. (2019, October 17). In-person survey. figshare. Retrieved October 31, 2022, from https://springernature.figshare.com/articles/dataset/In-person_survey/8323652?backTo=%2Fcollections%2FA_Dataset_on_Human_Response_to_Wildfire_Smoke%2F4316795
 Fowler, Mariah; Rad, Arash Modaresi; Utych, Stephen; Adams, Andrew; Alamian, Sanazsadat; Pierce, Jennifer; et al. (2019): A Dataset on Human Response to Wildfire Smoke. figshare. Collection. https://doi.org/10.6084/m9.figshare.c.4316795.v1
 U.S., F. S. (2022, May 19). Monitoring trends in burn severity fire occurrence locations (feature layer). Catalog. Retrieved October 31, 2022, from https://catalog.data.gov/dataset/monitoring-trends-in-burn-severity-fire-occurrence-locations-feature-layer-67d6a
 
