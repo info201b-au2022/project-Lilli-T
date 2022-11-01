@@ -49,19 +49,24 @@ As climate change continues to affect our ecosystems, [the rate and intensity of
 4. Which rooms have the best measured air quality during an increase in wildfire smoke? This question allows for a comparison between perceived safety and scientific safety, as measured by the amount of pollutants in the air. Building planners can use this data to create spaces that both protect against pollutants and are an inviting environment.
 
 ## The Data Set
-* Our first data set came from 3 researchers Jovan Pantelic, Megan Dawe , and Dusan Licina from UC Berkeley in 2019 which contains air quality data measured in pm2.5 in specific buildings and rooms in a particular state, documented throughout different times of the day. This data set came from their examination of building’s resilience to wildfires and associated emissions of particulate matter indoors. It will be primarily used to answer our third and fourth research questions about people’s indoor activities during wildfires and how the building structure actually protests the individuals. https://pdfs.semanticscholar.org/1e61/9438fde19776c34d8b533e0cb383a18cb897.pdf 
+* Our first data set came from 3 researchers Jovan Pantelic, Megan Dawe , and Dusan Licina from UC Berkeley in 2019 which contains air quality data measured in pm2.5 in specific buildings and rooms in a particular state, documented throughout different times of the day. This data set came from their examination of building’s resilience to wildfires and associated emissions of particulate matter indoors. It will be primarily used to answer our third and fourth research questions about people’s indoor activities during wildfires and how the building structure actually protests the individuals. https://pdfs.semanticscholar.org/1e61/9438fde19776c34d8b533e0cb383a18cb897.pdf
 
-* Our second data file came from the US Forest Service published in May 2022 which contains documented wildfires since 1984 in different states and their damage measured in acres. This data serves as the fundamental learning tool for us to understand wildfires recurrency and severity. It will also help us resolve our second research question while studying the correlation between participants geographic location and their perception of wildfires. https://catalog.data.gov/dataset/monitoring-trends-in-burn-severity-fire-occurrence-locations-feature-layer-67d6a 
+* Our second data file came from the US Forest Service published in May 2022 which contains documented wildfires since 1984 in different states and their damage measured in acres. This data serves as the fundamental learning tool for us to understand wildfires recurrency and severity. It will also help us resolve our second research question while studying the correlation between participants geographic location and their perception of wildfires. https://catalog.data.gov/dataset/monitoring-trends-in-burn-severity-fire-occurrence-locations-feature-layer-67d6a
 
 * Our third file contains survey results that record behavior in response to the 2018 summer California wildfires. It would answer the first research question by comparing the consciousness level of people who have different physical health conditions and any other factors that would affect individuals’ response.
 https://springernature.figshare.com/collections/A_Dataset_on_Human_Response_to_Wildfire_Smoke/4316795
 
+![table](datasetTable.png)
+
+AghaKouchak, A., Abatzoglou, J. T., Dennison, P., Sadegh, M., Fowler, M., Adams, A., Utych, S., Alamian, S., Pierce, J., Rad, A. M., & Montrose, L. (2019, October 17). In-person survey. figshare. Retrieved October 31, 2022, from https://springernature.figshare.com/articles/dataset/In-person_survey/8323652?backTo=%2Fcollections%2FA_Dataset_on_Human_Response_to_Wildfire_Smoke%2F4316795 
+Fowler, Mariah; Rad, Arash Modaresi; Utych, Stephen; Adams, Andrew; Alamian, Sanazsadat; Pierce, Jennifer; et al. (2019): A Dataset on Human Response to Wildfire Smoke. figshare. Collection. https://doi.org/10.6084/m9.figshare.c.4316795.v1
+U.S., F. S. (2022, May 19). Monitoring trends in burn severity fire occurrence locations (feature layer). Catalog. Retrieved October 31, 2022, from https://catalog.data.gov/dataset/monitoring-trends-in-burn-severity-fire-occurrence-locations-feature-layer-67d6a
 
 ## Expected Implications
 
 * Architects will reference our analysis to construct buildings and designated spaces that limit smoke and are accessible to people of lower general health.
 
-* Governors will use our analysis to understand the general public’s cautiousness of wildfires' negative impacts on their physical health and how well the civilians are protected indoors during wildfire seasons. They will set up education and protective protocols to help citizens protect themselves, and budget fundings for infrastructure amelioration. 
+* Governors will use our analysis to understand the general public’s cautiousness of wildfires' negative impacts on their physical health and how well the civilians are protected indoors during wildfire seasons. They will set up education and protective protocols to help citizens protect themselves, and budget fundings for infrastructure amelioration.
 
 
 ## Limitations
