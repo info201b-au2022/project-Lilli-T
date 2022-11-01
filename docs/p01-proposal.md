@@ -1,7 +1,4 @@
----
-title: "Integrating Wildfire Protection: Project Proposal"
-date: "10/31/2022"
----
+# Integrating Wildfire Protection: Project Proposal
 
 ## Code Name: Smoky Shelters
 
