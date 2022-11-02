@@ -51,13 +51,31 @@ As climate change continues to affect our ecosystems, the rate and intensity of 
 
 ## The Data Set
 
-* Our first data file came from 3 researchers; Jovan Pantelic, Megan Dawe, and Dusan Licina. They conducted the study at UC Berkeley in 2019. This set contains air quality data of pm2.5 particles, the primary pollutant in wildfire smoke, in specific buildings and rooms at UC Berkeley. The data is a time series, documented throughout different times of the day. This data set came from the researchers' examination of building’s resilience to wildfires and associated emissions of particulate matter indoors. We will use this data set to answer our third research question, which demands a quantitative analysis of building safety per room. We expect this data set to provide insight to the volume of pollution particles that people breathe in during wildfire season. Ths set will also help us to examine and how building structure protests individuals ([Pantelic, Dawe, Licina, 2019](https://pdfs.semanticscholar.org/1e61/9438fde19776c34d8b533e0cb383a18cb897.pdf)).
+#### Room Pollution
 
-* Our second data file came from the US Forest Service. It was published in May 2022, and it contains the wildfires documented since 1984 on a national scale. The data meaures the acreage of damage, the high and low thresholds of temperature, and the coordinates for the fire. This data will be used for us to understand wildfire recurrence and severity. It will help us to answer the second research question, which is concerned with the locations that experience wildfires most frequently and most severely. It can be used in conjunction with our last data set to determine how the wildfire frequency of the locations of survey participants affect their responses to the survey ([DoA, 2022](https://catalog.data.gov/dataset/monitoring-trends-in-burn-severity-fire-occurrence-locations-feature-layer-67d6a)).
+Our first data file came from 3 researchers; Jovan Pantelic, Megan Dawe, and Dusan Licina. They conducted the study at UC Berkeley in 2019. This set contains air quality data of pm2.5 particles, the primary pollutant in wildfire smoke, in specific buildings and rooms at UC Berkeley. The data is a time series, documented throughout different times of the day. This data set came from the researchers' examination of building’s resilience to wildfires and associated emissions of particulate matter indoors. We will use this data set to answer our third research question, which demands a quantitative analysis of building safety per room. We expect this data set to provide insight to the volume of pollution particles that people breathe in during wildfire season. The set will also help us to examine and how building structure protests individuals. The data is credible because it is a peer-reviewed scholarly article.
 
-* Our third and last data file contains survey results that record behavior in response to the 2018 summer California wildfires. It will help to answer our first research question, which is concerned with individuals' perceptions of wildfire threat. We will compare the perception of people with varying levels of physical and general health. We will also compare this data set to the first data set to examine if people's perceived safety of a room aligns with the relative level of pollution particles, pm2.5, in the room ([Fowler et al, 2019](https://springernature.figshare.com/collections/A_Dataset_on_Human_Response_to_Wildfire_Smoke/4316795)).
+Pantelic J, Dawe M, Licina D (2019) Use determining the resilience of buildings to forest fire generated PM2.5. PLoS ONE 14(10): e0223136.
+https://doi.org/10.1371/journal.pone.0223136
 
-![Data summary](../datatable.png)
+#### Wildfire Records
+
+Our second data file came from the US Forest Service. It was published in May 2022, and it contains the wildfires documented since 1984 on a national scale. The data measures the acreage of damage, the high and low thresholds of temperature, and the coordinates for the fire. This data will be used for us to understand wildfire recurrence and severity. It will help us to answer the second research question, which is concerned with the locations that experience wildfires most frequently and most severely. It can be used in conjunction with our last data set to determine how the wildfire frequency of the locations of survey participants affect their responses to the survey. The data is credible because it comes from the federal Department of Agriculture.
+
+U.S., F. S. (2022, May 19). Monitoring trends in burn severity fire occurrence locations (feature layer). Catalog. Retrieved October 31, 2022, from https://catalog.data.gov/dataset/monitoring-trends-in-burn-severity-fire-occurrence-locations-feature-layer-67d6a
+
+#### Survey Data
+
+Our third and last data file contains survey results that record behavior in response to the 2018 summer California wildfires. It will help to answer our first research question, which is concerned with individuals' perceptions of wildfire threat. We will compare the perception of people with varying levels of physical and general health. We will also compare this data set to the first data set to examine if people's perceived safety of a room aligns with the relative level of pollution particles, pm2.5, in the room. The data is credible because it is a peer-reviewed scholarly article.
+
+Fowler, Mariah; Rad, Arash Modaresi; Utych, Stephen; Adams, Andrew; Alamian, Sanazsadat; Pierce, Jennifer; et al. (2019): A Dataset on Human Response to Wildfire Smoke. figshare. Collection. https://doi.org/10.6084/m9.figshare.c.4316795.v1
+
+|Data Set Name|File Name|Number of Observations|Number of Variables|
+|---------------||------------------------|---------------------|
+|PM2.5 measurments of all sensors from 10/8/2018 until 10/21/2018|building_aq_analysis_data.csv|88,611|11|
+|Monitoring Trends in Burn Severity Fire Occurrence Locations (Feature Layer)|burn_severity_trends_data.csv|29,533|24|
+|A Dataset on Human Response to Wildfire Smoke|human_response_data.csv|614|29|
+
 
 ## Expected Implications
 
