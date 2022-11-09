@@ -70,11 +70,11 @@ Our third and last data file contains survey results that record behavior in res
 
 Fowler, Mariah; Rad, Arash Modaresi; Utych, Stephen; Adams, Andrew; Alamian, Sanazsadat; Pierce, Jennifer; et al. (2019): A Dataset on Human Response to Wildfire Smoke. figshare. Collection. https://doi.org/10.6084/m9.figshare.c.4316795.v1
 
-|Data Set Name|File Name|Number of Observations|Number of Variables|
-|---------------||------------------------|---------------------|
-|PM2.5 measurments of all sensors from 10/8/2018 until 10/21/2018|building_aq_analysis_data.csv|88,611|11|
-|Monitoring Trends in Burn Severity Fire Occurrence Locations (Feature Layer)|burn_severity_trends_data.csv|29,533|24|
-|A Dataset on Human Response to Wildfire Smoke|human_response_data.csv|614|29|
+|Data Set Name|File Name|Number of Observations|Number of Variables|  
+|---------------||------------------------|---------------------|  
+|PM2.5 measurments of all sensors from 10/8/2018 until 10/21/2018|building_aq_analysis_data.csv|88,611|11|  
+|Monitoring Trends in Burn Severity Fire Occurrence Locations (Feature Layer)|burn_severity_trends_data.csv|29,533|24|  
+|A Dataset on Human Response to Wildfire Smoke|human_response_data.csv|614|29|  
 
 
 ## Expected Implications
