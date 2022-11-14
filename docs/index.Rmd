@@ -30,7 +30,7 @@ source("../source/summary_table.R")
 summ_table()
 ```
 
-This table is ordered in descending order of the mean PMI in a typical setting, with no forest fires. Rows starting with "w" refer to rooms in the "Wurster" building, and rows starting with "f" referse to rooms in the "Fourth St." building. Rooms in the Wurster building have similar PMI's compared to rooms in the Fourth street building. The fourth street building's office had the highest average PMI for both typical and forest fire conditions. The fourth street building's empty floor had the lowest average PMI for typical conditions
+This table is ordered in descending order of the mean PMI in a typical setting, with no forest fires. Rows starting with "w" refer to rooms in the "Wurster" building, and rows starting with "f" refers to rooms in the "Fourth St." building. Rooms in the Wurster building have similar PMI's compared to rooms in the Fourth street building. The fourth street building's office had the highest average PMI for both typical and forest fire conditions. The fourth street building's empty floor had the lowest average PMI for typical conditions
 
 ### Charts
 #### Chart 1: Actions to Protect
