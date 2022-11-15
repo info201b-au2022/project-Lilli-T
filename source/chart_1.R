@@ -74,3 +74,4 @@ display_chart_1 <- function() {
 }
 
 # reference; https://r-graph-gallery.com/48-grouped-barplot-with-ggplot2.html
+

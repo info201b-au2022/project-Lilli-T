@@ -43,6 +43,21 @@ display_chart_1()
 
 This data comes from a survey in which participants ranked their own general health, then answered questions regarding their attitudes towards wildfires. This chart is important because it reveals how the general population in the greater Boise area react to protect themselves about wildfire smoke. The majority of respondents ranked themselves as either in good health or excellent health. This chart also demonstrates that staying at home was the most common course of action for those in excellent and good health. However, those in poor and fair health reported that taking medications was the most common action. Additionally, those in good health's third most popular action was to use a personal air filter. Moving to a building with an air filter was the third, and fifth choice for those in fair and good health, respectively.
 
-#### Chart 2
+#### Chart 2: rooms' resistance to wildfire smoke
+
+**Figure 2.** Each rooms' measured air quality in wildfire smoke
+
+```{r echo=FALSE}
+library("dplyr")
+library("tidyverse")
+library("ggplot2")
+library("viridis")
+library("hrbrthemes")
+display_chart_2_1()
+display_chart_2_2()
+```
+
+This data is collected by measuring the value of pm2.5 inside several rooms in NV and MV and outside during an increase in wildfire smoke. This chart compares different rooms' resistance when facing pollutants in the air between the two areas each days in November 2018, which reveals rooms in MV are more resistant to smoke since the pm2.5 value inside each rooms are much lower than the value outside. Particularly hotdesk1 and hotdesk2 are the most resistant room. In NV, the most stable and resistant room type is C373c. The chart provides scientific evidence of the room types that should be encouraged to build in specific region.
+
 
 #### Chart 3
