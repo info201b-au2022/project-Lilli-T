@@ -16,7 +16,7 @@ library(styler)
 # returns a data frame
 # summarize ages
 examine_ages <- function() {
-  mean <- mean(responses[["Q2.Option.1"]], na.rm = TRUE)
+  mean <- round(mean(responses[["Q2.Option.1"]], na.rm = TRUE))
   max <- max(responses[["Q2.Option.1"]], na.rm = TRUE)
   min <- min(responses[["Q2.Option.1"]], na.rm = TRUE)
   summary <- data.frame(stat = c("mean", "max", "min"), value = c(mean, max, min))
