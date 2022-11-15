@@ -48,11 +48,6 @@ This data comes from a survey in which participants ranked their own general hea
 **Figure 2.** Each rooms' measured air quality in wildfire smoke
 
 ```{r echo=FALSE}
-library("dplyr")
-library("tidyverse")
-library("ggplot2")
-library("viridis")
-library("hrbrthemes")
 display_chart_2_1()
 display_chart_2_2()
 ```
