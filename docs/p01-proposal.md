@@ -30,7 +30,7 @@ As climate change continues to affect our ecosystems, the rate and intensity of 
 
 ## Problem Domain
 
-**Background:** Wildfires emit carbon dioxide and other greenhouse gasses that will continue to warm the planet well into the future. They damage forests that would otherwise remove CO2 from the air. They also emit soot and other aerosols into the atmosphere, with complex effects on global warming and cooling ([Berwyn, 2020](https://insideclimatenews.org/news/23082018/extreme-wildfires-climate-change-global-warming-air-pollution-fire-management-black-carbon-co2/)). The increased air pollution can cause a range of health issues such as respiratory problems. Even in healthy people, exposures to fine particles can potentially lead to transient reductions in lung function, and pulmonary inflammation.([EPA, 2021](https://www.epa.gov/wildfire-smoke-course/health-effects-attributed-wildfire-smoke)).
+**Background:** Wildfires emit carbon dioxide and other greenhouse gasses that will continue to warm the planet well into the future. They damage forests that would otherwise remove CO2 from the air. They also emit soot and other aerosols into the atmosphere, with complex effects on global warming and cooling ([Berwyn, 2020](https://insideclimatenews.org/news/23082018/extreme-wildfires-climate-change-global-warming-air-pollution-fire-management-black-carbon-co2/)). The increased air pollution can cause a range of health issues such as respiratory problems. Even in healthy people, exposures to fine particles can potentially lead to transient reductions in lung function, and pulmonary inflammation ([EPA, 2021](https://www.epa.gov/wildfire-smoke-course/health-effects-attributed-wildfire-smoke)).
 
 **Relevance:** Wildfires and volcanic activities affected 6.2 million people between 1998-2017 with 2400 attributable deaths worldwide from suffocation, injuries, and burns ([WHO, 2018](https://www.who.int/health-topics/wildfires#tab=tab_1)), but the size and frequency of wildfires are increasing due to climate change.
 
@@ -66,15 +66,15 @@ U.S., F. S. (2022, May 19). Monitoring trends in burn severity fire occurrence l
 
 #### Survey Data
 
-Our third and last data file contains survey results that record behavior in response to the 2018 summer California wildfires. It will help to answer our first research question, which is concerned with individuals' perceptions of wildfire threat. We will compare the perception of people with varying levels of physical and general health. We will also compare this data set to the first data set to examine if people's perceived safety of a room aligns with the relative level of pollution particles, pm2.5, in the room. The data is credible because it is a peer-reviewed scholarly article.
+Our third and last data file contains survey results that record behavior of Boise Metropolitan Area residents in response to the 2018 summer California wildfires. It will help to answer our first research question, which is concerned with individuals' perceptions of wildfire threat. We will compare the perception of people with varying levels of physical and general health. We will also compare this data set to the first data set to examine if people's perceived safety of a room aligns with the relative level of pollution particles, pm2.5, in the room. The data is credible because it is a peer-reviewed scholarly article.
 
 Fowler, Mariah; Rad, Arash Modaresi; Utych, Stephen; Adams, Andrew; Alamian, Sanazsadat; Pierce, Jennifer; et al. (2019): A Dataset on Human Response to Wildfire Smoke. figshare. Collection. https://doi.org/10.6084/m9.figshare.c.4316795.v1
 
-|Data Set Name|File Name|Number of Observations|Number of Variables|
-|---------------||------------------------|---------------------|
-|PM2.5 measurments of all sensors from 10/8/2018 until 10/21/2018|building_aq_analysis_data.csv|88,611|11|
-|Monitoring Trends in Burn Severity Fire Occurrence Locations (Feature Layer)|burn_severity_trends_data.csv|29,533|24|
-|A Dataset on Human Response to Wildfire Smoke|human_response_data.csv|614|29|
+| Data Set Name | File Name | Number of Observations | Number of Variables |  
+|---------------|-----------|------------------------|---------------------|  
+| PM2.5 measurments of all sensors from 10/8/2018 until 10/21/2018 | building_aq_analysis_data.csv | 88,611 | 11 |  
+| Monitoring Trends in Burn Severity Fire Occurrence Locations (Feature Layer) | burn_severity_trends_data.csv | 29,533 | 24 |  
+| A Dataset on Human Response to Wildfire Smoke | human_response_data.csv | 614 | 29 |  
 
 
 ## Expected Implications
@@ -87,7 +87,7 @@ Fowler, Mariah; Rad, Arash Modaresi; Utych, Stephen; Adams, Andrew; Alamian, San
 
 ## Limitations
 
-Our data set surveys students in college, so our data analysis is not representative of the general public such as the elderly, children, and those in poverty. This narrows the scope of our study and reduces applicability to other urban buildings. Additionally, the building air quality data and the survey data we will use are based on university campuses in California, so our findings may only be applicable to a culture, environment, and buildings similar to those of California and its annual wildfires. We may address these limitations by adjusting our research question to also question community safety in California. However, this adjustment excludes possible implications for the increasing wildfires in the Pacific Northwest such as Washington, Idaho, and Southwestern Canada. By including implications for the Pacific Northwest, we hope to encourage the development of data sets that also contain survey results and building safety in locations outside of California.
+Our data set surveys people in the Boise Metropolitan Area, so our data analysis is not representative of the general public in other cities; there may be different proportions of the elderly, college students, those in poverty, and other demographics compared to national levels. This narrows the scope of our study and reduces applicability to other urban buildings. Additionally, the building air quality data that we will use are based on university campuses in California, so our findings may only be applicable to a culture, environment, and buildings similar to those of California and its annual wildfires. We may address these limitations by adjusting our research question to also question community safety in California. However, this adjustment excludes possible implications for the increasing wildfires in the Pacific Northwest such as Washington, Idaho, and Southwestern Canada. By including implications for the Pacific Northwest, we hope to encourage the development of data sets that also contain survey results and building safety in locations outside of California.
 
 ## Acknowledgements
 

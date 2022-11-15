@@ -1,7 +1,7 @@
 ---
-title: "Your Project Title"
-author: "project team members"
-date: "1/22/2022"
+title: "Integrating Wildfire Protection"
+author: "Lilli Toone, Patricia Ma, Rachel He"
+date: "11/10/2022"
 output: html_document
 ---
 
@@ -9,46 +9,55 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## What is this file for?
+# Integrating Wildfire Protection: Exploratory Data Analysis
 
-* This file will eventually become your project report for **P02: Exploratory Data Analysis**. Specifically, you will write rmarkdown to report your exploratory data analysis.
+### Dynamic summary
 
-* Please see Canvas for more details.
-
-## ACCESSING THE /source DIRECTORY
-### Example 1: Source some code and run a function
-```{r}
-# Example 1: Note relative path, which can be read: Up one
-# directory(..), down into source (/source), and 
-# then "source" an R file (data_access.R)
-source("../source/data_access.R")
-data_access_test()
+```{r echo=FALSE}
+# sources all R files
+source("../source/chart_1.R")
+source("../source/chart_2.R")
+source("../source/chart_3.R")
+source("../source/summary_calc.R")
+source("../source/summary_table.R")
 ```
 
-### Example 2: Initialize a variable and then use it
-```{r}
-# Example 1: This function was "sourced" above
-msg <- data_access_test(" Morgan!")
+### Table
+
+**Table 1.** PMI Levels By Room
+
+```{r echo=FALSE}
+summ_table()
 ```
 
-> `r msg` Hope you have a good day!! 
+This table is ordered in descending order of the mean PMI in a typical setting, with no forest fires. Rows starting with "w" refer to rooms in the "Wurster" building, and rows starting with "f" refers to rooms in the "Fourth St." building. Rooms in the Wurster building have similar PMI's compared to rooms in the Fourth street building. The fourth street building's office had the highest average PMI for both typical and forest fire conditions. The fourth street building's empty floor had the lowest average PMI for typical conditions
 
-## ABOUT THIS FILE: 
+### Charts
+#### Chart 1: Actions to Protect
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+**Figure 1.** Actions that individuals take to protect against wildfire smoke.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
+```{r echo=FALSE}
+display_chart_1()
 ```
 
-## Including Plots
+This data comes from a survey in which participants ranked their own general health, then answered questions regarding their attitudes towards wildfires. This chart is important because it reveals how the general population in the greater Boise area react to protect themselves about wildfire smoke. The majority of respondents ranked themselves as either in good health or excellent health. This chart also demonstrates that staying at home was the most common course of action for those in excellent and good health. However, those in poor and fair health reported that taking medications was the most common action. Additionally, those in good health's third most popular action was to use a personal air filter. Moving to a building with an air filter was the third, and fifth choice for those in fair and good health, respectively.
 
-You can also embed plots, for example:
+#### Chart 2: rooms' resistance to wildfire smoke
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+**Figure 2.** Each rooms' measured air quality in wildfire smoke
+
+```{r echo=FALSE}
+library("dplyr")
+library("tidyverse")
+library("ggplot2")
+library("viridis")
+library("hrbrthemes")
+display_chart_2_1()
+display_chart_2_2()
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+This data is collected by measuring the value of pm2.5 inside several rooms in NV and MV and outside during an increase in wildfire smoke. This chart compares different rooms' resistance when facing pollutants in the air between the two areas each days in November 2018, which reveals rooms in MV are more resistant to smoke since the pm2.5 value inside each rooms are much lower than the value outside. Particularly hotdesk1 and hotdesk2 are the most resistant room. In NV, the most stable and resistant room type is C373c. The chart provides scientific evidence of the room types that should be encouraged to build in specific region.
+
+
+#### Chart 3
