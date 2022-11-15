@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Integrating Wildfire Protection: Exploratory Data Analysis
+## Exploratory Data Analysis
 
 ### Dynamic summary
 
@@ -22,6 +22,29 @@ source("../source/summary_calc.R")
 source("../source/summary_table.R")
 ```
 
+```{r echo=FALSE}
+# data frame
+age_summary <- examine_ages()
+avg_age <- filter(age_summary, stat == "mean") %>%
+  pull(value)
+max_age <- filter(age_summary, stat == "max") %>%
+  pull(value)
+min_age <- filter(age_summary, stat == "min") %>%
+  pull(value)
+# percent
+percentage_excel <- seek_excel()
+# percent
+percentage_poor <- seek_poor()
+# data frame
+message_pop <- popular_type()
+msg_type <- pull(message_pop, type)
+msg_count <- pull(message_pop, count)
+# percentage
+perception <- hzd_perc()
+```
+
+We examined the summary of ages, the rate of seeking wildfire-related information, the preferred method to receive updating messages, and the perception of wildfire as a natural hazard of our survey data file. Knowing the age range of our data set helped us determine if our data set represented the general population. The respondents of the survey were, on average, **`r avg_age` years old**. The maximum age was **`r max_age` years old**, and the minimum age was **`r min_age` years old**. These participants rated their own general well-being on a scale of 1 to 4, with 1 being the best health. Of those with excellent health, **`r percentage_excel`%** reported that they actively seek information about wildfire and smoke information. Of those with poor health, **`r percentage_poor`%** reported seeking out information for that same question. Understanding these percentages is helpful when determining if a solution must focus attention on certain health groups. We assessed how participants preferred to receive updates on wildfire hazards to find desirable solutions. Receiving updates through **`r msg_type`** was the most popular, with **`r msg_count` votes**. We determined that **`r perception`%** of participants considered wildfires to be a natural hazard, which helped us to understand if wildfire hazards are a widespread worry.
+
 ### Table
 
 **Table 1.** PMI Levels By Room
@@ -30,7 +53,7 @@ source("../source/summary_table.R")
 summ_table()
 ```
 
-This table is ordered in descending order of the mean PMI in a typical setting, with no forest fires. Rows starting with "w" refer to rooms in the "Wurster" building, and rows starting with "f" refers to rooms in the "Fourth St." building. Rooms in the Wurster building have similar PMI's compared to rooms in the Fourth street building. The fourth street building's office had the highest average PMI for both typical and forest fire conditions. The fourth street building's empty floor had the lowest average PMI for typical conditions
+This table is ordered in descending order of the mean PMI in a typical setting, with no forest fires. Rows starting with "w" refer to rooms in the "Wurster" building, and rows starting with "f" refers to rooms in the "Fourth St." building. All rooms in the Wurster building have more similar PMI's compared to all rooms in the Fourth street building. In all rooms, typical settings returned lower pollution rates than forest fire settings. The fourth street building's office had the highest average PMI for both typical and forest fire conditions. The fourth street building's empty floor had the lowest average PMI for typical conditions.
 
 ### Charts
 #### Chart 1: Actions to Protect
@@ -48,11 +71,6 @@ This data comes from a survey in which participants ranked their own general hea
 **Figure 2.** Each rooms' measured air quality in wildfire smoke
 
 ```{r echo=FALSE}
-library("dplyr")
-library("tidyverse")
-library("ggplot2")
-library("viridis")
-library("hrbrthemes")
 display_chart_2_1()
 display_chart_2_2()
 ```
