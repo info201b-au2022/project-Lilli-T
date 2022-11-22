@@ -5,15 +5,15 @@ date: "11/10/2022"
 output: html_document
 ---
 
-```{r setup, include=FALSE, echo=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r setup, include=FALSE, echo=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
 ```
 
 # Integrating Wildfire Protection: Exploratory Data Analysis
 
 ### Dynamic summary
 
-```{r echo=FALSE}
+```{r echo=FALSE, warning=FALSE, include=FALSE}
 # sources all R files
 source("../source/chart_1.R")
 source("../source/chart_2.R")
@@ -22,7 +22,7 @@ source("../source/summary_calc.R")
 source("../source/summary_table.R")
 ```
 
-```{r echo=FALSE}
+```{r echo=FALSE, warning=FALSE}
 # data frame
 age_summary <- examine_ages()
 avg_age <- filter(age_summary, stat == "mean") %>%
@@ -49,7 +49,7 @@ We examined the summary of ages, the rate of seeking wildfire-related informatio
 
 **Table 1.** PMI Levels By Room.
 
-```{r echo=FALSE}
+```{r echo=FALSE, warning=FALSE}
 summ_table()
 ```
 
@@ -58,19 +58,17 @@ This table is ordered in descending order of the mean PMI in a typical setting, 
 ### Charts
 #### Chart 1: Actions to Protect
 
-**Figure 1.** Actions that individuals take to protect against wildfire smoke.
-
-```{r echo=FALSE}
+```{r echo=FALSE, warning=FALSE}
 display_chart_1()
 ```
+
+**Figure 1.** Actions that individuals take to protect against wildfire smoke.
 
 This data comes from a survey in which participants ranked their own general health, then answered questions regarding their attitudes towards wildfires. This chart is important because it reveals how the general population in the greater Boise area react to protect themselves about wildfire smoke. The majority of respondents ranked themselves as either in good health or excellent health. This chart also demonstrates that staying at home was the most common course of action for those in excellent and good health. However, those in poor and fair health reported that taking medications was the most common action. Additionally, those in good health's third most popular action was to use a personal air filter. Moving to a building with an air filter was the third, and fifth choice for those in fair and good health, respectively.
 
 #### Chart 2: rooms' resistance to wildfire smoke
 
-**Figure 2.** Rooms' measured air quality in wildfire smoke.
-
-```{r echo=FALSE}
+```{r echo=FALSE, warning=FALSE}
 library("dplyr")
 library("tidyverse")
 library("ggplot2")
@@ -78,20 +76,24 @@ library("viridis")
 library("hrbrthemes")
 display_chart_2_1()
 ```
-**Figure 3.** Rooms' measured air quality in wildfire smoke, continued.
-```{r echo=FALSE}
+
+**Figure 2.** Rooms' measured air quality in wildfire smoke.
+
+```{r echo=FALSE, warning=FALSE}
 display_chart_2_2()
 ```
+
+**Figure 3.** Rooms' measured air quality in wildfire smoke, continued.
 
 This data is collected by measuring the value of pm2.5 inside several rooms in NV and MV and outside during an increase in wildfire smoke. This chart compares different rooms' resistance when facing pollutants in the air between the two areas each days in November 2018, which reveals rooms in MV are more resistant to smoke since the pm2.5 value inside each rooms are much lower than the value outside. Particularly hotdesk1 and hotdesk2 are the most resistant room. In NV, the most stable and resistant room type is C373c. The chart provides scientific evidence of the room types that should be encouraged to build in specific region.
 
 
 #### Chart 3
 
-**Figure 4.** Room occupancy during wildfires.
-
-```{r echo = FALSE}
+```{r echo=FALSE, warning=FALSE}
 display_chart_3()
 ```
+
+**Figure 4.** Room occupancy during wildfires.
 
 This pie chart is used to answer our third research question regarding which rooms people feel the safest to go into during forest fire as air quality decreases. The data came from our data set that examined people's choice of indoor rooms during certain periods of time. The chart shows the occupancy rate of each room when wildfires occurs, and the pie chart was chosen to show proportion. We noticed that a few rooms have the exact same occupancy rate, and some rooms are significantly more frequently occupied than others. Viewers can clearly distinguish people's gravitation towards each room in this chart as rooms are labeled.
