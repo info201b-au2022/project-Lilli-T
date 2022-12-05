@@ -1,0 +1,13 @@
+name: shiny_report
+title: shiny_report
+username:
+account: lilli-t
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7811800
+bundleId: 6590879
+url: https://lilli-t.shinyapps.io/shiny_report/
+when: 1670203095.77076
+lastSyncTime: 1670203095.77079
+asMultiple: FALSE
+asStatic: FALSE
