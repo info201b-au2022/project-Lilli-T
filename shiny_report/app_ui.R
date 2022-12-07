@@ -3,6 +3,7 @@
 # load libraries and data set
 library(shiny)
 library(plotly)
+source("shiny_source/report_text.R")
 
 # beginning of content for part one - introduction
 intro_panel <- tabPanel(
@@ -68,7 +69,9 @@ summary_panel <- tabPanel(
 
 # beginning of content for part four - report page
 report_panel <- tabPanel(
-  "Report"
+  "Report",
+  titlePanel("Report"),
+  markdown(genenerate_report())
 )
 
 ui <- navbarPage("Human Response to Wildfires",

@@ -5,9 +5,9 @@ account: lilli-t
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 7811800
-bundleId: 6602221
+bundleId: 6602740
 url: https://lilli-t.shinyapps.io/shiny_report/
-when: 1670381110.01842
-lastSyncTime: 1670381110.01845
+when: 1670388244.63512
+lastSyncTime: 1670388244.63515
 asMultiple: FALSE
 asStatic: FALSE
