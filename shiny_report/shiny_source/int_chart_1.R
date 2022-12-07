@@ -68,3 +68,4 @@ plot_chart_1 <- function(health_type) {
     )
   return(chart_health_action)
 }
+

@@ -3,6 +3,7 @@
 # load libraries and data set
 library(shiny)
 library(plotly)
+library(ggplot2)
 
 # beginning of content for part one - introduction
 intro_panel <- tabPanel(
@@ -53,8 +54,46 @@ bar_panel <- tabPanel(
   )
 )
 
+list_room1 <- function() {
+  room_type <- c("corridor1", "corridor2", "cubicle3", "cubiclecorner", "cubiclehotdesk", "emptyfloor", "floor2mid", "floor2wall", "hotdesk1", "hotdesk2", "Moffice", "outside", "pantry", "Poffice")
+  list_room <- as.list(setNames(room_type, room_type))
+  return(list_room)
+}
+
+list_room2 <- function() {
+  room_type <- c("C373c", "outside", "w232", "w250a", "w348", "w353", "w373a", "w373c", "w390a", "w390d")
+  list_room <- as.list(setNames(room_type, room_type))
+  return(list_room)
+}
+
+user_room1 <- selectInput(
+  inputId = "input_room1",
+  label = "Room Selection (MV)",
+  choices = list_room1(),
+  selected = "outside"
+)
+
+user_room2 <- selectInput(
+  inputId = "input_room2",
+  label = "Room Selection (NV)",
+  choices = list_room2(),
+  selected = "outside"
+) 
+
 findings_two_panel <- tabPanel(
-  "Two"
+  "Rooms Resistance",
+  titlePanel("Reaction of Different types of rooms"),
+  sidebarLayout(
+    sidebarPanel(
+      user_room1,
+      user_room2
+    ),
+    mainPanel(
+      plotOutput("line_graph1"),
+      plotOutput("line_graph2"),
+      p("This data comes from")
+    )
+  )
 )
 
 findings_three_panel <- tabPanel(
