@@ -269,7 +269,11 @@ genenerate_report <- function() {
   with natural ventilation reported higher levels of pollutants than rooms in the building with mechanical
   ventilation. The last key finding was that people remained in rooms with lower air quality during a documented study.
   This comes from our third chart of exploration, which shows that people occupied the rooms in the building
-  with worst air quality more than the other rooms.
+  with worst air quality more than the other rooms.It is deducible that people are not mindfully choosing their 
+  indoor shelters based on the air quality, but based on their normal daily routine and convenience. We suppose 
+  that there was little to no communication around UC Berkeley where the study was done, that explained to people
+  the infrastrctures inability to protect folks against air pollution, nor was there enough personal awareness or room
+  of choice when deciding an indoor location. 
 
   This data and research can promote holistic health for occupants of public spaces. We can combine
   the survey data of questions about perceptions of certain rooms with the data of questions about the

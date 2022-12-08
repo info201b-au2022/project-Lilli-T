@@ -5,10 +5,13 @@ library(shiny)
 library(plotly)
 library(ggplot2)
 source("shiny_source/report_text.R")
+source("shiny_source/introduction_page.R")
 
 # beginning of content for part one - introduction
 intro_panel <- tabPanel(
-  "Introduction"
+  "Introduction",
+  titlePanel("Introduction"),
+  markdown(get_introduction_page())
 )
 
 # beginning of content for part two - three interactive pages
@@ -108,8 +111,29 @@ findings_two_panel <- tabPanel(
   )
 )
 
+occupancy_input <- selectInput(
+  "occupancy",
+  label = "Occupancy",
+  choices = c("All rooms", "Often occupied", "Less occupied", "Least occupied")
+)
+
 findings_three_panel <- tabPanel(
-  "Three"
+  "Room Occupancy",
+  titlePanel("Most to least occupied room during wildfire season"),
+  sidebarLayout(
+    sidebarPanel(
+      occupancy_input
+    ),
+    mainPanel(
+      plotlyOutput("pie_chart"),
+      p("This pie chart is used to answer our third research question regarding which rooms people feel the safest to go into 
+      during forest fire as air quality decreases. The data came from our data set that examined people's choice of indoor rooms 
+      during certain periods of time. The chart shows the occupancy rate of each room when wildfires occurs, and the pie chart was 
+      chosen to show proportion. We noticed that a few rooms have the exact same occupancy rate, and some rooms are significantly 
+      more frequently occupied than others. Viewers can clearly distinguish people's gravitation towards each room in this chart by 
+      filtering the rooms based on their occupancy rate")
+    )
+  )
 )
 
 # beginning of content for part three - summary takeaways
