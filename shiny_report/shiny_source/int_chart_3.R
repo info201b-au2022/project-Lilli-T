@@ -22,10 +22,10 @@ chart_3 <- function(occupancy) {
       filter(data$Occupancy <= 910) 
   } else if (occupancy == "Often occupied") {
     occupancy_rate <- data %>%
-      filter(between(data$Occupancy, 650, 910)) 
+      filter(between(data$Occupancy, 650, 910))
   } else if (occupancy == "Less occupied") {
     occupancy_rate <- data %>%
-      filter(between(data$Occupancy, 252, 650)) 
+      filter(between(data$Occupancy, 253, 649))  
   } else if (occupancy == "Least occupied") {
     occupancy_rate <- data %>%
       filter(data$Occupancy <= 252)
@@ -37,6 +37,4 @@ chart_3 <- function(occupancy) {
     
   return(chart)
 }
-
-chart_3("Often occupied")
 
