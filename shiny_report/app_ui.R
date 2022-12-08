@@ -3,11 +3,8 @@
 # load libraries and data set
 library(shiny)
 library(plotly)
-<<<<<<< HEAD
 library(ggplot2)
-=======
 source("shiny_source/report_text.R")
->>>>>>> 0eb8a473e1421cf7449d3adf6a9d037417761a4d
 
 # beginning of content for part one - introduction
 intro_panel <- tabPanel(
@@ -59,13 +56,16 @@ bar_panel <- tabPanel(
 )
 
 list_room1 <- function() {
-  room_type <- c("corridor1", "corridor2", "cubicle3", "cubiclecorner", "cubiclehotdesk", "emptyfloor", "floor2mid", "floor2wall", "hotdesk1", "hotdesk2", "Moffice", "outside", "pantry", "Poffice")
+  room_type <- c("corridor1", "corridor2", "cubicle3", "cubiclecorner",
+                 "cubiclehotdesk", "emptyfloor", "floor2mid", "floor2wall",
+                 "hotdesk1", "hotdesk2", "Moffice", "pantry", "Poffice")
   list_room <- as.list(setNames(room_type, room_type))
   return(list_room)
 }
 
 list_room2 <- function() {
-  room_type <- c("C373c", "outside", "w232", "w250a", "w348", "w353", "w373a", "w373c", "w390a", "w390d")
+  room_type <- c("C373c", "w232", "w250a", "w348", "w353", "w373a", "w373c",
+                 "w390a", "w390d")
   list_room <- as.list(setNames(room_type, room_type))
   return(list_room)
 }
@@ -74,14 +74,14 @@ user_room1 <- selectInput(
   inputId = "input_room1",
   label = "Room Selection (MV)",
   choices = list_room1(),
-  selected = "outside"
+  selected = "corridor1"
 )
 
 user_room2 <- selectInput(
   inputId = "input_room2",
   label = "Room Selection (NV)",
   choices = list_room2(),
-  selected = "outside"
+  selected = "C373c"
 ) 
 
 findings_two_panel <- tabPanel(
@@ -93,9 +93,17 @@ findings_two_panel <- tabPanel(
       user_room2
     ),
     mainPanel(
-      plotOutput("line_graph1"),
-      plotOutput("line_graph2"),
-      p("This data comes from")
+      plotlyOutput("line_graph1"),
+      p(),
+      plotlyOutput("line_graph2"),
+      p("This data collects the value of pm2.5 measured inside and outside of 
+        each of the specific building, distributed in two areas, in November,
+         2018. The graph is important because it reveals which room types can 
+        insulate more particle during an increase of wildfire smoke. In NV, the 
+        values inside w373a and w390a show greatest gap between themselves and 
+        outside whereas w250a shows smallest gap, which is less resistant than 
+        others. In MV, the pantry shows less resistant while cubicle and hotdesk 
+        are most resistant.")
     )
   )
 )

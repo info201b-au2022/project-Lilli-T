@@ -32,33 +32,54 @@ MV_data <- lapply(MV_data, gsub, pattern = "2018-", replacement = "", fixed = TR
 MV_data <- data.frame(c(MV_data))
 MV_data$value = as.numeric(as.character(MV_data$value))
 
-
+NV_final_data <- function(input_room) {
+  NV_data <- NV_data %>%
+    filter(room == input_room) %>%
+    filter(measurement == "pm2.5") %>%
+    select(room, datetimePST, value)
+  NV_data
+}
+MV_final_data <- function(input_room) {
+  MV_data <- MV_data %>%
+    filter(room == input_room) %>%
+    filter(measurement == "pm2.5") %>%
+    select(room, datetimePST, value)
+  MV_data
+}
 display_chart_MV <- function(input_room) {
-  p <- ggplot(MV_data) +
-    (mapping = aes(x=datetimePST, y=value, color=input_room)
-  ) +
-    geom_line(size = 0.3) +
-    scale_x_discrete(labels = 3:29) +
-    scale_y_continuous(limits = c(0, 400), breaks = c(0, 100, 200, 300, 400)) +
-    theme_ipsum() +
-    labs(
-      title = "pm2.5 value in different room in MV November, 2018",
-      y = "pm2.5 value",
-      x = "date"
+  MV_data <- MV_data %>%
+    filter(room == input_room | room == "outside") %>%
+    filter(measurement == "pm2.5") %>%
+    select(room, datetimePST, value)
+  p <- MV_data %>%
+    plot_ly(x = ~datetimePST,
+            y = ~value,
+            color = ~room,
+            type = "scatter",
+            mode = "lines") %>%
+    layout(
+      title = paste0("pm2.5 value in ", input_room, " v.s. outside(MV) in November, 2018")
+      
     )
-  ggplotly(p)
+  return(p)
 }
 display_chart_NV <- function(input_room) {
-  p <- ggplot(NV_data) +
-    geom_line(mapping = aes(x=datetimePST, y=value, color=input_room)) +
-    scale_x_discrete(labels = 3:29) +
-    scale_y_continuous(limits = c(0, 400), breaks = c(0, 100, 200, 300, 400)) +
-    theme_ipsum() +
-    labs(
-      title = "pm2.5 value in different room in MV November, 2018",
-      y = "pm2.5 value",
-      x = "date"
+  NV_data <- NV_data %>%
+    filter(room == input_room | room == "outside") %>%
+    filter(measurement == "pm2.5") %>%
+    select(room, datetimePST, value)
+  p <- NV_data %>%
+    plot_ly(x = ~datetimePST,
+            y = ~value,
+            color = ~room,
+            type = "scatter",
+            mode = "lines") %>%
+    layout(
+      title = paste0("pm2.5 value in ", input_room, " v.s. outside(NV) in November, 2018")
+      
     )
-  ggplotly(p)
+  return(p)
 }
-display_chart_NV("outside")
+display_chart_NV("C373c")
+
+
