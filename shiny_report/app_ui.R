@@ -114,7 +114,28 @@ findings_three_panel <- tabPanel(
 
 # beginning of content for part three - summary takeaways
 summary_panel <- tabPanel(
-  "Summary"
+  "Summary",
+  p("The first takeaway would be the majority people in the greater Boise area
+    ranked themselves as in good health or excellent health, most of them prefer
+    staying at home to protect themselves. Among those who ranked themselves as
+    poor and fair health, they choose to take medications and prefered moving to
+    a building with an air filter, which is also a popular reaction made by those
+    who are in good or excellent health."),
+  p(),
+  p("Secondly, we can learn from the bar chart that people who ranked themselves
+    have either fair or poor health condition prefer visiting doctors and taking
+    medications; in contrast, people who ranked themselves as excellent or good
+    health would rather self-protecting, such as staying at home. We can
+    conclude that participants with lower general health are more conscious of
+    the negative health effects of wildfires as others."),
+  p(),
+  p("While comparing the actual particle concentration in each room type with the
+    distribution of rooms people feel the safest to go into as air quality
+    decreases, we realize that a large percentage of people do not choose rooms
+    with relatively low levels of pm2.5, which may be a bias in people's
+    perception. Specifically, the room w250a have the best measured air quality
+    but it is the only one of the second most rooms people find safest.")
+  
 )
 
 # beginning of content for part four - report page
