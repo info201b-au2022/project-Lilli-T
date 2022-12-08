@@ -10,7 +10,7 @@ source("shiny_source/introduction_page.R")
 # beginning of content for part one - introduction
 intro_panel <- tabPanel(
   "Introduction",
-  titlePanel("Introduction"),
+  h2("Introduction", style = "font-family: monospace;"),
   markdown(get_introduction_page())
 )
 
@@ -51,7 +51,7 @@ bar_main_content <- mainPanel(
 
 bar_panel <- tabPanel(
   "Action Responses",
-  titlePanel("Popular Courses of Action"),
+  h2("Popular Courses of Action", style = "font-family: monospace;"),
   sidebarLayout(
     bar_sidebar_content,
     bar_main_content
@@ -89,7 +89,7 @@ user_room2 <- selectInput(
 
 findings_two_panel <- tabPanel(
   "Rooms Resistance",
-  titlePanel("Reaction of Different types of rooms"),
+  h2("Reaction of Different types of rooms", style = "font-family: monospace;"),
   sidebarLayout(
     sidebarPanel(
       user_room1,
@@ -119,7 +119,7 @@ occupancy_input <- selectInput(
 
 findings_three_panel <- tabPanel(
   "Room Occupancy",
-  titlePanel("Most to least occupied room during wildfire season"),
+  h2("Most to least occupied room during wildfire season", style = "font-family: monospace;"),
   sidebarLayout(
     sidebarPanel(
       occupancy_input
@@ -139,6 +139,7 @@ findings_three_panel <- tabPanel(
 # beginning of content for part three - summary takeaways
 summary_panel <- tabPanel(
   "Summary",
+  h2("Summary", style = "font-family: monospace;"),
   p("The first takeaway would be the majority people in the greater Boise area
     ranked themselves as in good health or excellent health, most of them prefer
     staying at home to protect themselves. Among those who ranked themselves as
@@ -165,7 +166,7 @@ summary_panel <- tabPanel(
 # beginning of content for part four - report page
 report_panel <- tabPanel(
   "Report",
-  titlePanel("Report"),
+  h2("Report", style = "font-family: monospace;"),
   markdown(genenerate_report())
 )
 
