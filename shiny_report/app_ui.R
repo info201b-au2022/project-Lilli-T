@@ -36,7 +36,7 @@ bar_main_content <- mainPanel(
     wildfires. This chart is important because it reveals how the general 
     population in the greater Boise area react to protect themselves about 
     wildfire smoke. The majority of respondents ranked themselves as either in 
-    good health or excellent health. This chart also demonstrates that staying 
+    good health or excellent health. This chart demonstrates that staying 
     at home was the most common course of action for those in excellent and good 
     health. However, those in poor and fair health reported that taking 
     medications was the most common action. Additionally, those in good health’s 
