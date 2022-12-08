@@ -15,24 +15,28 @@ chart_3 <- function(occupancy) {
   
   data <- data.frame(Rooms = occupied_count$place, Occupancy = occupied_count$n)
   
+  occupancy_rate <- data 
+  
   if (occupancy == "All rooms") {
     occupancy_rate <- data %>%
-      filter(occupied_count$n <= 910) 
+      filter(data$Occupancy <= 910) 
   } else if (occupancy == "Often occupied") {
     occupancy_rate <- data %>%
-      filter(650 <= occupied_count$n & occupied_count$n < 910) 
+      filter(between(data$Occupancy, 650, 910)) 
   } else if (occupancy == "Less occupied") {
     occupancy_rate <- data %>%
-      filter(252 <= occupied_count$n & occupied_count$n < 650) 
+      filter(between(data$Occupancy, 252, 650)) 
   } else if (occupancy == "Least occupied") {
     occupancy_rate <- data %>%
-      filter(occupied_count$n <= 252)
+      filter(data$Occupancy <= 252)
   }
   
-  chart <- plot_ly(occupancy_rate, labels = ~occupied_count$place, values = ~occupied_count$n, type = 'pie') %>% layout(title = 'Occupancy Rate',
+  chart <- plot_ly(occupancy_rate, labels = ~Rooms, values = ~Occupancy, type = "pie") %>% layout(title = 'Occupancy Rate',
                         xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
                         yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
     
   return(chart)
 }
+
+chart_3("Often occupied")
 
